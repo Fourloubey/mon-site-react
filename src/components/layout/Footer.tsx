@@ -17,8 +17,12 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">K</span>
+              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
+                <img
+                  src="https://i.imgur.com/htBwH03.png"
+                  alt="Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <span className="font-display text-lg font-semibold text-background">
