@@ -40,7 +40,7 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/mon-site-react/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-glow transition-transform duration-300 group-hover:scale-105">
               <img 
                 src="https://i.imgur.com/htBwH03.png" 
