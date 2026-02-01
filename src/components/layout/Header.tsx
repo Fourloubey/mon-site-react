@@ -50,10 +50,10 @@ export function Header() {
             </div>
             <div className="hidden sm:block">
               <span className="font-display text-lg font-semibold text-foreground">
-                AKSS
+                CABINET KINE TERRES NEUVES
               </span>
               <span className="block text-xs text-muted-foreground">
-                Cabinet des Terres Neuves
+                Masseur-Kinésithérapeutes
               </span>
             </div>
           </Link>
