@@ -89,7 +89,7 @@ export default function Index() {
           >
             <SectionTitle title="À qui s'adresse le cabinet" />
             <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl">
-              Vous souffrez de douleurs articulaires ou musculaires, vous êtes blessé dans votre pratique sportive, vous souhaitez vous remettre en mouvement dans un cadre sécurisé et encadré, ou vous recherchez une prise en charge spécialisée pour votre enfant ou votre nourrisson. Le cabinet <strong className="text-foreground">Activité Kiné Sport Santé</strong> vous accueille pour une prise en charge personnalisée, centrée sur le mouvement et l'éducation du patient.
+              Vous souffrez de douleurs articulaires ou musculaires, vous êtes blessé dans votre pratique sportive, vous souhaitez vous remettre en mouvement dans un cadre sécurisé et encadré, ou vous recherchez une prise en charge spécialisée pour votre enfant ou votre nourrisson. Le cabinet de <strong className="text-foreground">Kinésithérapie des Terres Neuves</strong> vous accueille pour une prise en charge personnalisée, centrée sur le mouvement et l'éducation du patient.
             </p>
           </motion.div>
         </div>
