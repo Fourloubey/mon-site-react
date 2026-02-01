@@ -94,7 +94,7 @@ export function Footer() {
             <div className="flex items-start gap-3">
               <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
               <div className="text-background/80 text-sm">
-                <p className="font-medium">Mardi à Vendredi</p>
+                <p className="font-medium">Lundi au Vendredi</p>
                 <p>8h30 - 19h00</p>
                 <p className="mt-2 italic text-background/60">Sur rendez-vous uniquement</p>
               </div>
@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-background/10 text-center">
           <p className="text-background/50 text-sm">
-            © 2025 Activité Kiné Sport Santé - FG - Tous droits réservés
+            © 2026 Kineos-digital - Fourloubey Gaétan - Tous droits réservés
           </p>
         </div>
       </div>
