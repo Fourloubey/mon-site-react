@@ -149,7 +149,7 @@ export default function Index() {
             >
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-secondary/30 p-8 flex items-center justify-center">
                 <img
-                  src="https://i.imgur.com/SCE6VUP.jpeg"
+                  src="https://i.imgur.com/Pl1iv1e.jpeg"
                   alt="Notre démarche"
                   className="w-full h-full object-cover rounded-3xl" 
                   />
