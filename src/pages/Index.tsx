@@ -153,7 +153,6 @@ export default function Index() {
                   alt="Notre démarche"
                   className="w-full h-full object-cover rounded-3xl" 
                   />
-                </div>
               </div>
             </motion.div>
           </div>
