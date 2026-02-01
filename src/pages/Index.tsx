@@ -148,9 +148,10 @@ export default function Index() {
               className="relative"
             >
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-secondary/30 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <Activity className="w-24 h-24 text-foreground/40 mx-auto mb-4" />
-                  <p className="text-muted-foreground italic">Photo à venir</p>
+                <img
+                  src="https://i.imgur.com/SCE6VUP.jpeg"
+                  alt="Notre démarche"
+                  className="w-full h-full object-cover rounded-3xl" />
                 </div>
               </div>
             </motion.div>
