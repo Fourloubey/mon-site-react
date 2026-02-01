@@ -22,10 +22,10 @@ export function Footer() {
               </div>
               <div>
                 <span className="font-display text-lg font-semibold text-background">
-                  Activité Kiné
+                  Cabinet Kinésithérapie Terres Neuves
                 </span>
                 <span className="block text-xs text-background/60">
-                  Sport Santé
+                  Activité Sport Santé
                 </span>
               </div>
             </div>
