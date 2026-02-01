@@ -151,7 +151,8 @@ export default function Index() {
                 <img
                   src="https://i.imgur.com/SCE6VUP.jpeg"
                   alt="Notre démarche"
-                  className="w-full h-full object-cover rounded-3xl" />
+                  className="w-full h-full object-cover rounded-3xl" 
+                  />
                 </div>
               </div>
             </motion.div>
