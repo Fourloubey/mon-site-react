@@ -8,28 +8,28 @@ const teamMembers = [
     name: "Cécile", 
     role: "Kinésithérapeute", 
     image: "https://i.imgur.com/ELcln01.jpg",
-    bio: "Spécialisée en périnatalité, je propose une prise en charge en rééducation périnéale ainsi que l'accompagnement des troubles du nourrisson (coliques, torticolis, plagiocéphalie). En parallèle, je prends en charge les pathologies orthopédiques et traumatiques de l'adulte."
+    bio: "Spécialisée en périnatalité, je propose une prise en charge en rééducation périnéale ainsi que l’accompagnement des troubles du nourrisson. J’ai à cœur d’aider les mamans à reprendre leurs activités et leur pratique sportive en toute confiance, et de les rassurer dans leurs premiers pas de mère. J’accorde également une attention particulière aux troubles du nourrisson, afin de soutenir sa motricité et d’accompagner les parents avec des conseils clairs et concrets."
   },
   { 
     id: 2, 
     name: "Camille", 
     role: "Kinésithérapeute", 
     image: "https://i.imgur.com/N3w6elg.jpg",
-    bio: "Diplômée en thérapie manuelle (ITMP) et spécialisée dans la prise en charge du cancer du sein, je suis également professeure de Pilates et passionnée par le mouvement et la prévention. J'accompagne les patients dans leur rééducation et leur retour à une vie active."
+    bio: "Diplômée en thérapie manuelle (ITMP) et spécialisée dans la prise en charge du cancer du sein, je suis également professeure de Pilates. J’ai fait du mouvement le cœur de mon métier, avec une ambition : vous aider à retrouver force, confiance et liberté de bouger, dans un cadre à la fois exigeant et bienveillant."
   },
   { 
     id: 3, 
     name: "Gaétan", 
     role: "Kinésithérapeute", 
     image: "https://i.imgur.com/LSqUHxt.jpeg",
-    bio: "DU pathologies rachidiennes, formation McKenzie (lombaires et cervicales) et spécialisations récentes sur les tendinopathies et l'instabilité d'épaule. Coureur passionné, j'accompagne les sportifs dans leur rééducation et réathlétisation."
+    bio: "DU pathologies rachidiennes, formation McKenzie (lombaires et cervicales) et spécialisations récentes sur les tendinopathies et l’instabilité de l’épaule : j’appuie ma pratique sur des approches actuelles et validées. Coureur de trail, j’accompagne aussi les sportifs, avec un intérêt particulier pour les douleurs aiguës en course à pied, la prévention des blessures et la gestion de la charge d’entraînement."
   },
   { 
     id: 4, 
     name: "Elias", 
     role: "Kinésithérapeute", 
     image: "https://i.imgur.com/eFO878g.jpg",
-    bio: "Orienté orthopédie, rhumatologie et traumatologie, j'accompagne enfants, adolescents et adultes dans leur parcours de rééducation. Passionné de sport, j'adapte mes prises en charge aux objectifs de chaque patient."
+    bio: "Orienté orthopédie, rhumatologie et traumatologie, j’accompagne enfants, adolescents et adultes souffrant de troubles musculosquelettiques. J’ai complété ma formation par l’enseignement MDT (McKenzie) et la formation « Épaule au top ». Curieux et engagé dans une démarche d’amélioration continue, je poursuis actuellement une formation en kinésithérapie du sport."
   },
 ];
 
