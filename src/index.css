@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* Design System for Activité Kiné Sport Santé
+   Professional healthcare branding with energy and warmth
+*/
+
+@layer base {
+  :root {
+    /* Primary: Energetic yellow-green - represents vitality & movement */
+    --primary: 74 79% 68%;
+    --primary-foreground: 0 0% 20%;
+    
+    /* Secondary: Soft mauve - calm, professional, healing */
+    --secondary: 258 30% 76%;
+    --secondary-foreground: 0 0% 20%;
+    
+    /* Background: Warm beige - welcoming, organic */
+    --background: 45 33% 96%;
+    --foreground: 0 0% 18%;
+    
+    /* Card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    
+    /* Muted surfaces */
+    --muted: 45 20% 92%;
+    --muted-foreground: 0 0% 40%;
+    
+    /* Accent: Yellow-green for highlights */
+    --accent: 74 79% 68%;
+    --accent-foreground: 0 0% 20%;
+    
+    /* Destructive */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Borders */
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 74 79% 68%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(74 79% 68%) 0%, hsl(258 30% 76%) 100%);
+    --gradient-hero-reverse: linear-gradient(135deg, hsl(258 30% 76%) 0%, hsl(74 79% 68%) 100%);
+    --gradient-card: linear-gradient(135deg, hsla(74, 79%, 68%, 0.1) 0%, hsla(258, 30%, 76%, 0.15) 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsla(0, 0%, 0%, 0.08);
+    --shadow-md: 0 8px 24px -4px hsla(0, 0%, 0%, 0.1);
+    --shadow-lg: 0 16px 48px -8px hsla(0, 0%, 0%, 0.12);
+    --shadow-glow: 0 8px 32px -8px hsla(74, 79%, 68%, 0.4);
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 26%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 74 79% 68%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 74 79% 68%;
+    --primary-foreground: 0 0% 10%;
+    
+    --secondary: 258 30% 30%;
+    --secondary-foreground: 0 0% 95%;
+    
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+    
+    --accent: 258 30% 30%;
+    --accent-foreground: 0 0% 95%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 74 79% 68%;
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 74 76% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 16%;
+    --sidebar-ring: 74 79% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+  }
+}
