@@ -149,7 +149,7 @@ export default function Index() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-secondary/30 p-8 flex items-center justify-center">
+              <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/30 p-1">
                 <img
                   src="https://i.imgur.com/Pl1iv1e.jpeg"
                   alt="Notre démarche"
