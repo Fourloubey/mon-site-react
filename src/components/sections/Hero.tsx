@@ -109,7 +109,7 @@ export function Hero({ title, subtitle, showCta = false, variant = "default" }: 
                   </Link>
                 </Button>
               </motion.div>
-            </motion.div>
+              
             <motion.div
                 whileHover={{ scale: 1.08, y: -4 }}
                 whileTap={{ scale: 0.95 }}
