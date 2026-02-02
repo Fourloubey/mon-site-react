@@ -110,6 +110,24 @@ export function Hero({ title, subtitle, showCta = false, variant = "default" }: 
                 </Button>
               </motion.div>
             </motion.div>
+            <motion.div
+                whileHover={{ scale: 1.08, y: -4 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <Button 
+                  asChild 
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full gap-2 border-2 border-foreground/80 text-foreground bg-foreground/10 hover:bg-foreground/20 backdrop-blur-md text-base px-8 py-6 font-semibold transition-shadow hover:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.3)]"
+                >
+                  <Link to="/#equipe">
+                    L'équipe
+                    <ArrowRight className="w-5 h-5" />
+                  </Link>
+                </Button>
+              </motion.div>
+            </motion.div>
           )}
         </div>
       </div>
