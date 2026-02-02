@@ -10,6 +10,7 @@ import Consultations from "./pages/Consultations";
 import Sport from "./pages/Sport";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
+import ScrollToHash from "@/components/ScrollToHash";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/mon-site-react">
+        <ScrollToHash />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/a-propos" element={<APropos />} />
