@@ -107,11 +107,27 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-background/10 text-center">
-          <p className="text-background/50 text-sm">
-            © 2026 Kineos-digital - Fourloubey Gaétan - Tous droits réservés
-          </p>
-        </div>
+<div className="mt-16 pt-8 border-t border-background/10 text-center space-y-3">
+  <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+    <Link
+      to="/mentions-legales"
+      className="text-background/70 hover:text-primary transition-colors"
+    >
+      Mentions légales
+    </Link>
+    <Link
+      to="/politique-confidentialite"
+      className="text-background/70 hover:text-primary transition-colors"
+    >
+      Politique de confidentialité
+    </Link>
+  </div>
+
+  <p className="text-background/50 text-sm">
+    © 2026 Kineos-digital - Fourloubey Gaétan - Tous droits réservés
+  </p>
+</div>
+
       </div>
     </footer>
   );
