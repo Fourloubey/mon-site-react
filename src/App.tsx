@@ -23,7 +23,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/mon-site-react">
+      <BrowserRouter>
         <ScrollToTop />
         <ScrollToHash />
         <Routes>
