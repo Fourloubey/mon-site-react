@@ -9,9 +9,12 @@ import APropos from "./pages/APropos";
 import Consultations from "./pages/Consultations";
 import Sport from "./pages/Sport";
 import Blog from "./pages/Blog";
+import MentionsLegales from "./pages/MentionsLegales";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import NotFound from "./pages/NotFound";
 import ScrollToHash from "@/components/ScrollToHash";
 import ScrollToTop from "@/components/ScrollToTop";
+
 
 const queryClient = new QueryClient();
 
@@ -29,6 +32,8 @@ const App = () => (
           <Route path="/consultations" element={<Consultations />} />
           <Route path="/sport" element={<Sport />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
