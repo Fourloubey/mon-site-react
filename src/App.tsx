@@ -11,6 +11,7 @@ import Sport from "./pages/Sport";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 import ScrollToHash from "@/components/ScrollToHash";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter basename="/mon-site-react">
+        <ScrollToTop />
         <ScrollToHash />
         <Routes>
           <Route path="/" element={<Index />} />
