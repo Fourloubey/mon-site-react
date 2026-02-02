@@ -119,7 +119,9 @@ export default function Index() {
       </section>
 
       {/* L'équipe */}
-      <TeamSection />
+      <section id="equipe" className="scroll-mt-24">
+        <TeamSection />
+      </section>
 
       {/* Notre démarche */}
       <section className="py-20">
