@@ -16,12 +16,19 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const phoneNumber = "06 70 90 27 69";
+  const phoneNumberRaw = "0670902769";
+  
+  async function copyPhone() {
+      await navigator.clipboard.writeText(phoneNumberRaw);
+}
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -40,7 +47,7 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/mon-site-react/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-glow transition-transform duration-300 group-hover:scale-105">
               <img 
                 src="https://i.imgur.com/PvSwITn.png" 
@@ -77,13 +84,16 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button asChild className="rounded-full gap-2 shadow-glow hover:shadow-lifted transition-shadow">
-              <a href="tel:0670902769">
+            <Button
+                type="button"
+                onClick={copyPhone}
+                className="rounded-full gap-2 shadow-glow hover:shadow-lifted transition-shadow"
+            >
                 <Phone className="w-4 h-4" />
-                <span>Prendre RDV</span>
-              </a>
+                <span>Copier : {phoneNumber}</span>
             </Button>
           </div>
+
 
           {/* Mobile Menu Toggle */}
           <button
