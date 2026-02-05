@@ -43,7 +43,7 @@ export function Header() {
           <Link to="/mon-site-react/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-xl overflow-hidden shadow-glow transition-transform duration-300 group-hover:scale-105">
               <img 
-                src="https://i.imgur.com/htBwH03.png" 
+                src="https://i.imgur.com/PvSwITn.png" 
                 alt="Logo Activité Kiné Sport Santé"
                 className="w-full h-full object-contain"
               />
