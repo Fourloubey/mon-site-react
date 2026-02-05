@@ -84,15 +84,14 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <Button
-                type="button"
-                onClick={copyPhone}
-                className="rounded-full gap-2 shadow-glow hover:shadow-lifted transition-shadow"
-            >
+            <Button asChild className="rounded-full gap-2 shadow-glow hover:shadow-lifted transition-shadow">
+              <Link to="/#contact">
                 <Phone className="w-4 h-4" />
-                <span>Copier : {phoneNumber}</span>
+                <span>Prendre RDV</span>
+              </Link>
             </Button>
           </div>
+
 
 
           {/* Mobile Menu Toggle */}
@@ -133,13 +132,14 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="tel:0670902769"
+              <Link
+                to="/#contact"
                 className="flex items-center gap-2 px-4 py-3 rounded-lg bg-primary text-primary-foreground font-medium"
               >
                 <Phone className="w-4 h-4" />
                 Prendre rendez-vous
-              </a>
+              </Link>
+
             </div>
           </motion.div>
         )}
