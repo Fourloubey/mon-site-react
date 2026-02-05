@@ -16,23 +16,27 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
-                <img
-                  src="https://i.imgur.com/PvSwITn.png"
-                  alt="Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <span className="font-display text-lg font-semibold text-background">
-                  Cabinet Kinésithérapie Terres Neuves
-                </span>
-                <span className="block text-xs text-background/60">
-                  Activité Sport Santé
-                </span>
-              </div>
+          <div className="flex items-start gap-3 mb-6">
+            {/* Logo: ne rétrécit jamais */}
+            <div className="shrink-0 w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
+              <img
+                src="https://i.imgur.com/xdH8a9o.png"
+                alt="Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
+          
+            {/* Texte: autorisé à se compresser/wrap sans casser le layout */}
+            <div className="min-w-0">
+              <span className="font-display text-lg font-semibold text-background">
+                Cabinet Kinésithérapie Terres Neuves
+              </span>
+              <span className="block text-xs text-background/60">
+                Activité Sport Santé
+              </span>
+            </div>
+          </div>
+
             <p className="text-background/70 text-sm leading-relaxed">
               Prise en charge des douleurs, rééducation fonctionnelle et réathlétisation du sportif à Bordeaux.
             </p>
