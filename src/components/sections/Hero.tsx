@@ -82,13 +82,15 @@ export function Hero({ title, subtitle, showCta = false, variant = "default" }: 
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
                 <Button 
-                  asChild 
+                  asChild
                   size="lg"
                   className="rounded-full gap-2 bg-card text-foreground hover:bg-card shadow-lifted text-base px-8 py-6 transition-shadow hover:shadow-[0_20px_60px_-10px_rgba(0,0,0,0.3)]"
                 >
-                  <a href="tel:0670902769">
+                  <a href="tel:0670902769" className="flex items-center gap-2">
                     <Phone className="w-5 h-5" />
-                    Prendre rendez-vous
+                
+                    <span className="lg:hidden">Prendre rendez-vous</span>
+                    <span className="hidden lg:inline">06 70 90 27 69</span>
                   </a>
                 </Button>
               </motion.div>
