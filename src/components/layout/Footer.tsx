@@ -38,14 +38,12 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Contact */}
-            <section id="contact">
-            ...
-            </section>
-          <div>
+                    {/* Contact */}
+          <section id="contact" className="scroll-mt-24">
             <h3 className="font-display text-lg font-semibold mb-6 text-primary">
               Contact
             </h3>
+          
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -53,26 +51,28 @@ export function Footer() {
                   317 Bd Jean Jacques Bosc<br />33800 Bordeaux
                 </span>
               </li>
+          
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a 
-                  href="tel:0670902769" 
+                <a
+                  href="tel:0670902769"
                   className="text-background/80 text-sm hover:text-primary transition-colors"
                 >
                   06 70 90 27 69
                 </a>
               </li>
+          
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a 
-                  href="mailto:kineterresneuves@gmail.com" 
+                <a
+                  href="mailto:kineterresneuves@gmail.com"
                   className="text-background/80 text-sm hover:text-primary transition-colors"
                 >
                   kineterresneuves@gmail.com
                 </a>
               </li>
             </ul>
-          </div>
+          </section>
 
           {/* Navigation */}
           <div>
