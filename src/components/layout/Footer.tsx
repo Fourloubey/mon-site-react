@@ -39,6 +39,9 @@ export function Footer() {
           </div>
 
           {/* Contact */}
+            <section id="contact">
+            ...
+            </section>
           <div>
             <h3 className="font-display text-lg font-semibold mb-6 text-primary">
               Contact
