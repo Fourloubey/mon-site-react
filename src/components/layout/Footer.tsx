@@ -19,7 +19,7 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
                 <img
-                  src="https://i.imgur.com/htBwH03.png"
+                  src="https://i.imgur.com/PvSwITn.png"
                   alt="Logo"
                   className="w-full h-full object-contain"
                 />
