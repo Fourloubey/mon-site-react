@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,19 +25,23 @@ jobs:
           node-version: 20
           cache: npm
 
-      - run: npm ci
-      - run: npm run build
+      - name: Install
+        run: npm ci
 
-      # Ajoute sitemap + robots dans dist, pour qu'ils soient servis
-      - run: |
-          cp sitemap.xml dist/sitemap.xml || true
-          cp robots.txt dist/robots.txt || true
+      - name: Build
+        run: npm run build
 
-      - uses: actions/upload-pages-artifact@v3
+      - name: Generate sitemap into dist
+        run: node scripts/generate-sitemap.mjs
+
+      - name: SPA fallback (copy index to 404)
+        run: cp dist/index.html dist/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
-  deploy:
+   deploy:
     needs: build
     runs-on: ubuntu-latest
     environment:
