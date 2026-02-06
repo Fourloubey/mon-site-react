@@ -29,13 +29,18 @@ jobs:
 
       - name: Install
         run: npm ci
-
+      
       - name: Build
         run: npm run build
-        
+      
       - name: SPA fallback (copy index to 404)
         run: cp dist/index.html dist/404.html
-
+      
+      - name: Copy sitemap/robots into dist
+        run: |
+          cp sitemap.xml dist/sitemap.xml || true
+          cp robots.txt dist/robots.txt || true
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
