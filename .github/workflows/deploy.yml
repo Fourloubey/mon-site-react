@@ -34,9 +34,6 @@ jobs:
       - name: Generate sitemap into dist
         run: node scripts/generate-sitemap.mjs
 
-      - name: SPA fallback (copy index to 404)
-        run: cp dist/index.html dist/404.html
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
