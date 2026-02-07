@@ -182,7 +182,7 @@ function FlipCard({ member, index }: FlipCardProps) {
           
                     {/* 👆 Appuie MOBILE */}
           <motion.div 
-            className="absolute top-4 left-4 md:hidden invisible group-hover:visible bg-white/95 backdrop-blur-sm text-foreground px-3 py-1.5 rounded-lg text-xs font-semibold shadow-md border transition-all duration-300 z-30"
+            className="absolute top-4 left-4 md:hidden bg-white/95 backdrop-blur-sm text-foreground px-3 py-1.5 rounded-lg text-xs font-semibold shadow-md border opacity-0 hover:opacity-100 group-hover:opacity-100 transition-opacity duration-200 z-40 pointer-events-none"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.2 }}
