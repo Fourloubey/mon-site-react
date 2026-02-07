@@ -79,16 +79,16 @@ export default function Index() {
 
       {/* À qui s'adresse le cabinet */}
       <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">  {/* ← Responsive full-width */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-card rounded-3xl p-8 md:p-12 shadow-soft border border-border/50"
+            className="bg-card rounded-3xl p-6 sm:p-8 md:p-12 shadow-soft border border-border/50 w-full"  {/* Mobile p-6 */}
           >
-            <SectionTitle title="À qui s'adresse le cabinet" />
-            <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl">
+        <SectionTitle title="À qui s'adresse le cabinet" />
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed max-w-none">  {/* ← max-w-none + responsive font */}
               Vous souffrez de douleurs articulaires ou musculaires, vous êtes blessé dans votre pratique sportive, vous souhaitez vous remettre en mouvement dans un cadre sécurisé et encadré, ou vous recherchez une prise en charge spécialisée pour votre enfant ou votre nourrisson. Le cabinet de <strong className="text-foreground">Kinésithérapie des Terres Neuves</strong> vous accueille pour une prise en charge personnalisée, centrée sur le mouvement et l'éducation du patient.
             </p>
           </motion.div>
