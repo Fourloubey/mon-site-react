@@ -178,6 +178,10 @@ function FlipCard({ member, index }: FlipCardProps) {
           {/* Hint to flip */}
           <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity">
             Survolez ↻
+          {/* 👆 Appuie mobile */}
+            <div className="md:hidden absolute bottom-2 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500/90 to-blue-600/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg border border-white/20 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300 z-20 pointer-events-none select-none whitespace-nowrap">
+        👆 Appuie
+            </div>
           </div>
         </div>
 
