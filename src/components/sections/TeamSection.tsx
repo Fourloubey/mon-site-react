@@ -182,12 +182,12 @@ function FlipCard({ member, index }: FlipCardProps) {
           
                     {/* 👆 Appuie MOBILE */}
           <motion.div 
-            className="absolute bottom-4 left-1/2 -translate-x-1/2 md:hidden bg-white/90 backdrop-blur-md text-foreground px-3 py-1 rounded-lg text-xs font-medium shadow-md opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all z-20"
+            className="absolute top-4 left-4 md:hidden bg-white/95 backdrop-blur-sm text-foreground px-3 py-1.5 rounded-lg text-xs font-semibold shadow-md border opacity-0 group-hover:opacity-100 transition-all z-20">
             initial={{ scale: 0.9, y: 4 }}
             whileHover={{ scale: 1, y: 0 }}
             whileTap={{ scale: 0.95 }}
           >
-            👆 Appuie
+            Appuie
           </motion.div>
 
         </div>
