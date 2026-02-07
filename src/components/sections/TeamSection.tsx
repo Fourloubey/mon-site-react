@@ -178,10 +178,6 @@ function FlipCard({ member, index }: FlipCardProps) {
           {/* Hint to flip */}
           <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-xs text-white opacity-0 group-hover:opacity-100 transition-opacity">
             Survolez ↻
-          {/* 👆 Appuie mobile */}
-            <div className="md:hidden absolute bottom-2 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500/90 to-blue-600/90 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg border border-white/20 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300 z-20 pointer-events-none select-none whitespace-nowrap">
-        👆 Appuie
-            </div>
           </div>
         </div>
 
@@ -252,5 +248,20 @@ function FlipCard({ member, index }: FlipCardProps) {
         </div>
       </motion.div>
     </motion.div>
+    
+        {/* Layout nom/role/bouton SOUS carte */}
+          <div className="mt-4 text-center space-y-1">
+            <h3 className="font-display text-xl font-bold text-foreground">{member.name}</h3>
+              <p className="text-muted-foreground text-sm font-medium">{member.role}</p>
+          <motion.button
+              className="mt-3 bg-gradient-to-r from-primary/90 to-secondary/90 bg-opacity-80 backdrop-blur-sm border border-white/20 text-primary-foreground px-6 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setIsFlipped(!isFlipped)}
+          >
+        {isFlipped ? '← Retour' : '👆 Découvrir'}
+          </motion.button>
+          </div>
+  
   );
 }
