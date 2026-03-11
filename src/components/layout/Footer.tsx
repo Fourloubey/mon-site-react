@@ -42,17 +42,30 @@ export function Footer() {
             </p>
           </div>
 
-                    {/* Contact */}
+                    {/* Contact & Accès - Optimisé SEO Local */}
           <section id="contact" className="scroll-mt-24">
             <h3 className="font-display text-lg font-semibold mb-6 text-primary">
-              Contact
+              Contact & Accès
             </h3>
           
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-background/80 text-sm">
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=317+Boulevard+Jean+Jacques+Bosc+33800+Bordeaux" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-background/80 text-sm hover:text-primary transition-colors"
+                >
                   317 Bd Jean Jacques Bosc<br />33800 Bordeaux
+                </a>
+              </li>
+
+              <li className="flex items-start gap-3">
+                <TrainFront className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span className="text-background/80 text-sm font-light">
+                  <strong>Tram C :</strong> Arrêt Terres Neuves<br />
+                  <strong>Bus :</strong> Lignes 15, 20, 35
                 </span>
               </li>
           
@@ -106,8 +119,9 @@ export function Footer() {
               <Clock className="w-5 h-5 text-primary shrink-0 mt-0.5" />
               <div className="text-background/80 text-sm">
                 <p className="font-medium">Lundi au Vendredi</p>
-                <p>8h30 - 19h00</p>
+                <p>8h00 - 20h00</p>
                 <p className="mt-2 italic text-background/60">Sur rendez-vous uniquement</p>
+                <p className="mt-1 text-xs underline decoration-primary/30">Praticiens conventionnés</p>
               </div>
             </div>
           </div>
