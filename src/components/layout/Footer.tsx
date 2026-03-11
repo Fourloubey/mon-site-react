@@ -16,33 +16,31 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-          <div className="flex items-start gap-3 mb-6">
-            {/* Logo: ne rétrécit jamais */}
-            <div className="shrink-0 w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
-              <img
-                src="https://i.imgur.com/xdH8a9o.png"
-                alt="Logo"
-                className="w-full h-full object-contain"
-              />
+            <div className="flex items-start gap-3 mb-6">
+              <div className="shrink-0 w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center bg-muted">
+                <img
+                  src="https://i.imgur.com/xdH8a9o.png"
+                  alt="Logo Cabinet Kinésithérapie"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            
+              <div className="min-w-0">
+                <span className="font-display text-lg font-semibold text-background">
+                  Cabinet Kinésithérapie Terres Neuves
+                </span>
+                <span className="block text-xs text-background/60">
+                  Kiné du Sport - Bordeaux Bègles
+                </span>
+              </div>
             </div>
-          
-            {/* Texte: autorisé à se compresser/wrap sans casser le layout */}
-            <div className="min-w-0">
-              <span className="font-display text-lg font-semibold text-background">
-                Cabinet Kinésithérapie Terres Neuves
-              </span>
-              <span className="block text-xs text-background/60">
-                Activité Sport Santé
-              </span>
-            </div>
-          </div>
 
             <p className="text-background/70 text-sm leading-relaxed">
-              Prise en charge des douleurs, rééducation fonctionnelle et réathlétisation du sportif à Bordeaux.
+              Rééducation fonctionnelle, kinésithérapie du sportif et rééducation périnéale à Bordeaux Terres Neuves.
             </p>
           </div>
 
-                    {/* Contact & Accès - Optimisé SEO Local */}
+          {/* Contact & Accès - Optimisé SEO */}
           <section id="contact" className="scroll-mt-24">
             <h3 className="font-display text-lg font-semibold mb-6 text-primary">
               Contact & Accès
@@ -51,22 +49,19 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=317+Boulevard+Jean+Jacques+Bosc+33800+Bordeaux" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-background/80 text-sm hover:text-primary transition-colors"
-                >
-                  317 Bd Jean Jacques Bosc<br />33800 Bordeaux
-                </a>
-              </li>
-
-              <li className="flex items-start gap-3">
-                <TrainFront className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-background/80 text-sm font-light">
-                  <strong>Tram C :</strong> Arrêt Terres Neuves<br />
-                  <strong>Bus :</strong> Lignes 15, 20, 35
-                </span>
+                <div className="text-background/80 text-sm">
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=317+Boulevard+Jean+Jacques+Bosc+33800+Bordeaux" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-primary transition-colors font-medium"
+                  >
+                    317 Bd Jean Jacques Bosc<br />33800 Bordeaux
+                  </a>
+                  <p className="mt-2 text-xs text-background/60 italic">
+                    Tram C : Arrêt Terres Neuves (200m)
+                  </p>
+                </div>
               </li>
           
               <li className="flex items-center gap-3">
@@ -120,35 +115,18 @@ export function Footer() {
               <div className="text-background/80 text-sm">
                 <p className="font-medium">Lundi au Vendredi</p>
                 <p>8h00 - 20h00</p>
-                <p className="mt-2 italic text-background/60">Sur rendez-vous uniquement</p>
-                <p className="mt-1 text-xs underline decoration-primary/30">Praticiens conventionnés</p>
+                <p className="mt-2 italic text-background/60 text-xs text-primary/80">Sur RDV uniquement</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-<div className="mt-16 pt-8 border-t border-background/10 text-center space-y-3">
-  <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
-    <Link
-      to="/mentions-legales"
-      className="text-background/70 hover:text-primary transition-colors"
-    >
-      Mentions légales
-    </Link>
-    <Link
-      to="/politique-confidentialite"
-      className="text-background/70 hover:text-primary transition-colors"
-    >
-      Politique de confidentialité
-    </Link>
-  </div>
-
-  <p className="text-background/50 text-sm">
-    © 2026 Kineos-digital - Fourloubey Gaétan - Tous droits réservés
-  </p>
-</div>
-
+        <div className="mt-16 pt-8 border-t border-background/10 text-center">
+          <p className="text-background/50 text-sm">
+            © 2026 Kineos-digital - Fourloubey Gaétan - Tous droits réservés
+          </p>
+        </div>
       </div>
     </footer>
   );
