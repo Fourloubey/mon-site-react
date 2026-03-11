@@ -1,7 +1,11 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// Liste de vos routes (sans le slash initial)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Vos routes réelles
 const routes = [
   'a-propos',
   'consultations',
@@ -11,21 +15,19 @@ const routes = [
   'politique-confidentialite'
 ];
 
-const distPath = path.join(__dirname, 'dist'); // ou 'build' selon votre config
+const distPath = path.join(__dirname, 'dist');
 
 routes.forEach(route => {
   const routePath = path.join(distPath, route);
   
-  // Créer le dossier pour la route
   if (!fs.existsSync(routePath)) {
     fs.mkdirSync(routePath, { recursive: true });
   }
   
-  // Copier le index.html dans ce dossier
   fs.copyFileSync(
     path.join(distPath, 'index.html'),
     path.join(routePath, 'index.html')
   );
   
-  console.log(`✅ Route générée : /${route}`);
+  console.log(`✅ Route SEO générée : /${route}`);
 });
