@@ -9,18 +9,18 @@ import { SectionTitle } from "@/components/sections/SectionTitle";
 const sportSections = [
   {
     icon: Users,
-    title: "Pour tous les profils",
-    content: "Amateur assidu ou sportif du dimanche, que vous repreniez le sport après une période d'arrêt ou que vous cherchiez à améliorer vos performances, nous nous adaptons à votre rythme, vos contraintes et vos objectifs pour vous accompagner dans une pratique durable et sans douleur.",
+    title: "Kiné du sport pour tous à Bordeaux Bègles", // Ajout localisation
+    content: "Que vous soyez marathonien, pratiquant de crossfit aux Terres Neuves ou coureur débutant, nous adaptons votre rééducation à votre pratique. Nous accompagnons la reprise du sport après blessure pour une activité durable.",
   },
   {
     icon: Activity,
     title: "Gestion de la récupération",
     content: "Nous vous accompagnons dans la gestion de votre récupération entre les séances et dans l'optimisation de vos performances par un suivi de la charge d'entraînement, des conseils sur la progressivité et l'adaptation de vos volumes et intensités.",
   },
-  {
+ {
     icon: Zap,
-    title: "Prise en charge des blessures du coureur",
-    content: "Douleur aiguë, traumatisme récent ou ancien : une fois le diagnostic posé, nous évaluons efficacement le coureur en prenant en compte les antécédents cliniques, l'historique d'entraînement et les blessures actuelles.",
+    title: "Expertise en Course à pied", // Terme fort
+    content: "Spécialisés dans les blessures du coureur, nous réalisons une analyse clinique complète de votre foulée et de votre historique d'entraînement pour traiter la cause réelle de vos douleurs.",
   },
   {
     icon: Target,
@@ -29,8 +29,8 @@ const sportSections = [
   },
   {
     icon: TrendingUp,
-    title: "Réathlétisation et retour au sport",
-    content: "La réathlétisation structure le retour à l'activité sportive par étapes validées : critères de douleur, tests de force, tests fonctionnels, progression de la charge. L'objectif est de revenir au niveau souhaité en minimisant le risque de récidive.",
+    title: "Réathlétisation après chirurgie et retour au sport",
+    content: "Suivi post-opératoire : ligamentoplastie (LCA), ménisques ou tendons. La réathlétisation structure le retour à l'activité sportive par étapes validées : critères de douleur, tests de force, tests fonctionnels, progression de la charge. L'objectif est de revenir au niveau souhaité en minimisant le risque de récidive.",
   },
 ];
 
